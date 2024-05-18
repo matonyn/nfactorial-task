@@ -1,16 +1,16 @@
 
 body {
     font-family: "Ubuntu", sans-serif;
-    color: black;
+    color: white;
     margin: 0;
     padding: 0;
     align-items: center;
     text-align: center;
+    background: black;
 }
 
 
 header {
-    background: url("/static/spotify-logo.jpg") 40% 60%;
     font-family: "Ubuntu", sans-serif;
     color: #fff;
     padding: 200px;
@@ -62,4 +62,21 @@ button{
 
 button:hover {
     background-color: #45a049;
+}
+
+footer{
+    font-family: "Ubuntu", sans-serif;
+    color: #fff;
+    text-align: center;
+    background: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+footer a{
+    color: #45a049;
 }
