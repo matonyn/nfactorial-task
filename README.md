@@ -5,6 +5,7 @@ For this program to run, you should have python and django downloaded to your ma
 To test out the implementation follow the instructions:
 1. Download the files from this repository.
 2. Open the downloaded folder in the preferred compiler.
-3. Open a new terminal and type: 'cd spoty_task'
-4. Type: 'python3 manage.py runserver', and go to the http://127.0.0.1:8000/.
+3. Open a new terminal and type:
+    `cd spoty_task`
+4. Type: `python3 manage.py runserver`, and go to the http://127.0.0.1:8000/.
 5. Ready to test out!
