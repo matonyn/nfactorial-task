@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="{%static '/style.css/'%}"> 
 </head>
 <body>
+    <a href="/">
     <header>
     </header>
+    </a>
     <div class="title-spoty">
     {% if user.is_authenticated %}
     <h1>Welcome, {{user.username}}!</h1>
@@ -23,7 +25,7 @@
     {% endif %}
     </div>
     <div class="description">
-    <p>Here you can find the top tracks of the month</p>
+    <p>Here you can find the top albums of the month</p>
     </div>
 
     <div class="songs-list">
@@ -55,7 +57,7 @@
     <div class="search-results">
         <ul>
             {% for found in found_songs%}
-            <div class="found_songr">
+            <div class="found_cont">
             <a href="/{{found.id}}/">
                 <li>
                 <p>{{found}}</p>
@@ -69,7 +71,7 @@
 
     <div class="Login">
         {% if user.is_authenticated%}
-        <div class="auth">
+        <div class="logout">
         <a href="/logout/"><li>Log out</li></a>
         </div>
         {% else %}
