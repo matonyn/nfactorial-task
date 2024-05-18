@@ -68,7 +68,7 @@ def review(request, pk):
         rating = request.POST['rating']
         user = request.user
         song_id = pk
-        reviews.objects.create(song=song.objects.get(id=song_id), text=text, user=user)
+        reviews.objects.create(song=song.objects.get(id=song_id), text=text, user=user, rating=rating)
 
         song_to_update = song.objects.get(id=song_id)
         song_to_update.ranking = (song_to_update.ranking + float(rating)) / 2
